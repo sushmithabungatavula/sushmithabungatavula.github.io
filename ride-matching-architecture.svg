@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1322"/>
+      <stop offset="1" stop-color="#131c31"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6ca7ff"/>
+    </marker>
+    <style>
+      .box { fill: #172238; stroke: #2c3f63; stroke-width: 2; }
+      .core { fill: #1b2c4c; stroke: #6ca7ff; stroke-width: 2; }
+      .k8s { fill: none; stroke: #3d5a8c; stroke-width: 2; stroke-dasharray: 10 8; }
+      .title { fill: #f5f8ff; font-size: 26px; font-weight: 700; }
+      .label { fill: #f5f8ff; font-size: 22px; font-weight: 600; }
+      .sub { fill: #9fb3d6; font-size: 16px; }
+      .tag { fill: #9ac6ff; font-size: 15px; font-weight: 600; letter-spacing: 1.5px; }
+      .line { stroke: #6ca7ff; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #6ca7ff; stroke-width: 2.5; fill: none; stroke-dasharray: 6 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" rx="28" fill="url(#bg)"/>
+
+  <text x="60" y="78" class="title">Ride Matching Platform</text>
+  <text x="60" y="108" class="sub">Nearest-driver dispatch · FastAPI · Redis GEO · PostgreSQL · Kafka · Kubernetes</text>
+
+  <!-- Clients -->
+  <rect x="60" y="190" width="230" height="96" rx="18" class="box"/>
+  <text x="84" y="232" class="label">Driver app</text>
+  <text x="84" y="260" class="sub">location pings</text>
+
+  <rect x="60" y="330" width="230" height="96" rx="18" class="box"/>
+  <text x="84" y="372" class="label">Rider app</text>
+  <text x="84" y="400" class="sub">POST /trips</text>
+
+  <rect x="60" y="470" width="230" height="96" rx="18" class="box"/>
+  <text x="84" y="512" class="label">Dispatch console</text>
+  <text x="84" y="540" class="sub">React + Vite</text>
+
+  <!-- Kubernetes boundary -->
+  <rect x="350" y="150" width="790" height="480" rx="24" class="k8s"/>
+  <text x="378" y="186" class="tag">KUBERNETES · HPA 3→20 REPLICAS · PROBES · INGRESS</text>
+
+  <!-- API -->
+  <rect x="390" y="300" width="270" height="150" rx="20" class="core"/>
+  <text x="414" y="346" class="label">FastAPI (async)</text>
+  <text x="414" y="376" class="sub">REST API</text>
+  <text x="414" y="402" class="sub">Matching engine</text>
+  <text x="414" y="428" class="sub">Trip lifecycle</text>
+
+  <!-- Data stores -->
+  <rect x="790" y="210" width="310" height="110" rx="18" class="box"/>
+  <text x="814" y="252" class="label">Redis</text>
+  <text x="814" y="280" class="sub">GEOSEARCH nearest drivers</text>
+  <text x="814" y="302" class="sub">live geospatial index</text>
+
+  <rect x="790" y="350" width="310" height="110" rx="18" class="box"/>
+  <text x="814" y="392" class="label">PostgreSQL</text>
+  <text x="814" y="420" class="sub">source of truth</text>
+  <text x="814" y="442" class="sub">FOR UPDATE SKIP LOCKED</text>
+
+  <rect x="790" y="490" width="310" height="110" rx="18" class="box"/>
+  <text x="814" y="532" class="label">Kafka</text>
+  <text x="814" y="560" class="sub">driver.locations</text>
+  <text x="814" y="582" class="sub">trip_matched / unmatched</text>
+
+  <!-- Arrows clients -> API -->
+  <path d="M290 238 C340 238 340 340 386 340" class="line"/>
+  <path d="M290 378 L386 378" class="line"/>
+  <path d="M290 518 C340 518 340 416 386 416" class="line"/>
+
+  <!-- API -> stores -->
+  <path d="M660 340 C720 340 720 265 786 265" class="line"/>
+  <path d="M660 390 L786 405" class="line"/>
+  <path d="M660 420 C720 420 720 545 786 545" class="dash"/>
+
+  <text x="60" y="672" class="sub">1 · Drivers stream locations → Redis GEO index + Kafka event</text>
+  <text x="60" y="700" class="sub">2 · Rider requests trip → nearest drivers from Redis → claim in Postgres with row lock</text>
+  <text x="60" y="728" class="sub">3 · Match result published to Kafka for downstream consumers</text>
+</svg>

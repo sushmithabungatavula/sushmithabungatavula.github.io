@@ -271,3 +271,51 @@ if (canvas) {
   resize();
   start();
 }
+
+document.querySelectorAll(".experience-card").forEach((card) => {
+  const toggle = card.querySelector(".experience-toggle");
+  const header = card.querySelector(".experience-top");
+  if (!toggle || !header) return;
+
+  const setOpen = (open) => {
+    card.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.querySelector(".experience-toggle-label").textContent = open ? "Hide" : "Details";
+  };
+
+  header.addEventListener("click", () => {
+    setOpen(!card.classList.contains("is-open"));
+  });
+});
+
+const caseModal = document.getElementById("case-modal");
+
+if (caseModal && typeof caseModal.showModal === "function") {
+  const caseBody = caseModal.querySelector(".case-body");
+
+  const closeCase = () => caseModal.close();
+
+  document.querySelectorAll(".case-study-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const template = document.getElementById(`case-${trigger.dataset.case}`);
+      if (!template) return;
+
+      caseBody.replaceChildren(template.content.cloneNode(true));
+      body.classList.add("has-modal");
+      caseModal.showModal();
+      const inner = caseModal.querySelector(".case-modal-inner");
+      inner.scrollTop = 0;
+      inner.focus();
+    });
+  });
+
+  caseModal.querySelector(".case-close").addEventListener("click", closeCase);
+
+  caseModal.addEventListener("click", (event) => {
+    if (event.target === caseModal) closeCase();
+  });
+
+  caseModal.addEventListener("close", () => {
+    body.classList.remove("has-modal");
+  });
+}
