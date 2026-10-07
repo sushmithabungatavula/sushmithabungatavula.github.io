@@ -585,88 +585,16 @@
         </div>
 
 
-        <div class="projects-stack">
-
+        <div class="projects-stack project-grid">
 
           <!-- CHAT WITH YOUR DOCS -->
 
           <article
-            class="panel project-feature-row"
+            class="panel project-card"
             data-reveal="up"
           >
 
-            <div class="project-feature-copy">
-
-              <h3>
-                Chat With Your Docs | RAG Application
-              </h3>
-
-              <p class="project-feature-description">
-                Developed an end-to-end browser-based RAG application
-                for querying PDF and text documents and generating
-                citation-grounded answers with clickable source passages.
-              </p>
-
-              <p class="project-feature-description">
-                Engineered hybrid retrieval using semantic embeddings,
-                BM25, cosine similarity, and Reciprocal Rank Fusion.
-                Integrated Claude Sonnet with Vercel Edge Functions
-                for streaming responses with prompt-injection defenses,
-                rate limiting, and citation validation.
-              </p>
-
-              <div class="tag-row">
-                <span>JavaScript</span>
-                <span>RAG</span>
-                <span>Transformers.js</span>
-                <span>BM25</span>
-                <span>Claude Sonnet</span>
-                <span>Vercel Edge</span>
-              </div>
-
-              <div class="project-links">
-
-                <button
-                  class="case-study-trigger"
-                  type="button"
-                  data-case="chatdocs"
-                  aria-haspopup="dialog"
-                >
-                  <span>Case study</span>
-                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-
-
-                <a
-                  href="https://chatwithyourdocs.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/chatwithyourdocs.png"
-                    alt=""
-                  />
-                  <span>Live</span>
-                </a>
-
-                <a
-                  href="https://github.com/sushmithabungatavula/rag-docs-chat"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
-                  <span>GitHub</span>
-                </a>
-
-              </div>
-
-            </div>
-
-
-            <div class="project-feature-media">
+            <div class="project-card-media" data-case-open="chatdocs">
 
               <img
                 src="./icons/chatwithyourdocs.png"
@@ -676,78 +604,30 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- LEDGERLY -->
-
-          <article
-            class="panel project-feature-row project-feature-row-reverse"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                Ledgerly | AI Expense Tracker
-              </h3>
-
-              <p class="project-feature-description">
-                Developed an end-to-end AI expense tracker with
-                automated transaction categorization and a
-                confidence-based review workflow for ambiguous expenses.
-              </p>
-
-              <p class="project-feature-description">
-                Wrote a Multinomial Naive Bayes classifier from scratch
-                in JavaScript that runs entirely in the browser and
-                retrains on every correction, improving categorization
-                accuracy from 67% to 85%. Receipt photos are read
-                on-device with Tesseract.js OCR.
-              </p>
-
-              <div class="tag-row">
-                <span>JavaScript</span>
-                <span>Naive Bayes</span>
-                <span>Machine Learning</span>
-                <span>Tesseract.js OCR</span>
-                <span>SVG Charts</span>
-              </div>
+              <h3>Chat With Your Docs</h3>
+              <p class="project-card-sub">RAG Application</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="ledgerly"
+                  data-case="chatdocs"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-
-                <a
-                  href="https://ledgerly-expense-calcy.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/ledgerly.png"
-                    alt=""
-                  />
+                <a class="project-link" href="https://chatwithyourdocs.vercel.app/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Live</span>
                 </a>
 
-                <a
-                  href="https://github.com/sushmithabungatavula/ledgerly"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://github.com/sushmithabungatavula/rag-docs-chat" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
                   <span>GitHub</span>
                 </a>
 
@@ -755,8 +635,17 @@
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- LEDGERLY -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="ledgerly">
 
               <img
                 src="./icons/ledgerly.png"
@@ -766,73 +655,30 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- DISTRIBUTED RATE LIMITER -->
-
-          <article
-            class="panel project-feature-row"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                Distributed Rate Limiter | Redis-Backed API Gateway
-              </h3>
-
-              <p class="project-feature-description">
-                Built a rate-limiting service with FastAPI and Redis that gates requests per client using token bucket or sliding window algorithms, with shared atomic state across instances.
-              </p>
-
-              <p class="project-feature-description">
-                Eliminated race conditions with an atomic Redis Lua script and WATCH/MULTI optimistic locking, streamed live traffic to a React dashboard over Server-Sent Events, and containerized the stack with Docker Compose.
-              </p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>Redis</span>
-                <span>Lua</span>
-                <span>React</span>
-                <span>Docker</span>
-                <span>GitHub Actions</span>
-              </div>
+              <h3>Ledgerly</h3>
+              <p class="project-card-sub">AI Expense Tracker</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="ratelimiter"
+                  data-case="ledgerly"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-                <a
-                  href="https://sushmitha-rate-limiter.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/vercel.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://ledgerly-expense-calcy.vercel.app/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Live</span>
                 </a>
 
-                <a
-                  href="https://github.com/sushmithabungatavula/rate-limiter"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://github.com/sushmithabungatavula/ledgerly" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
                   <span>GitHub</span>
                 </a>
 
@@ -840,8 +686,17 @@
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- DISTRIBUTED RATE LIMITER -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="ratelimiter">
 
               <img
                 src="./ratelimiter.png"
@@ -851,61 +706,30 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- RIDE MATCHING PLATFORM -->
-
-          <article
-            class="panel project-feature-row project-feature-row-reverse"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                Ride Matching Platform | Distributed Dispatch System
-              </h3>
-
-              <p class="project-feature-description">
-                Designed a distributed ride matching platform modeled on Uber's dispatch flow, matching riders to the nearest available driver and tracking trips through completion.
-              </p>
-
-              <p class="project-feature-description">
-                Used Redis GEOSEARCH for millisecond nearest-driver lookups, PostgreSQL row-level locking to prevent double-booking, Kafka for trip events, and Kubernetes manifests with autoscaling from 3 to 20 replicas.
-              </p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>Redis</span>
-                <span>PostgreSQL</span>
-                <span>Kafka</span>
-                <span>Docker</span>
-                <span>Kubernetes</span>
-              </div>
+              <h3>Distributed Rate Limiter</h3>
+              <p class="project-card-sub">Redis-Backed API Gateway</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="ridematch"
+                  data-case="ratelimiter"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-                <a
-                  href="https://github.com/sushmithabungatavula/ride-matching-platform"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://sushmitha-rate-limiter.vercel.app/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Live</span>
+                </a>
+
+                <a class="project-link" href="https://github.com/sushmithabungatavula/rate-limiter" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
                   <span>GitHub</span>
                 </a>
 
@@ -913,8 +737,17 @@
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- RIDE MATCHING PLATFORM -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="ridematch">
 
               <img
                 src="./ride-matching-architecture.svg"
@@ -924,76 +757,25 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- CROWDED ORBIT -->
-
-          <article
-            class="panel project-feature-row"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                The Crowded Orbit | LEO Congestion Analysis
-              </h3>
-
-              <p class="project-feature-description">
-                Analyzed 59K+ satellite and debris records using
-                Python and Pandas, cleaning and standardizing data
-                to identify long-term Low Earth Orbit congestion trends.
-              </p>
-
-              <p class="project-feature-description">
-                Built interactive D3.js and Three.js visualizations
-                and scenario projections to model satellite and debris
-                growth through 2035.
-              </p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>D3.js</span>
-                <span>Three.js</span>
-                <span>Data Visualization</span>
-              </div>
+              <h3>Ride Matching Platform</h3>
+              <p class="project-card-sub">Distributed Dispatch System</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="orbit"
+                  data-case="ridematch"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-
-                <a
-                  href="https://thecrowdedorbit.vercel.app/index.html"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/vercel.svg"
-                    alt=""
-                  />
-                  <span>Live</span>
-                </a>
-
-                <a
-                  href="https://github.com/sushmithabungatavula"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://github.com/sushmithabungatavula/ride-matching-platform" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
                   <span>GitHub</span>
                 </a>
 
@@ -1001,8 +783,17 @@
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- CROWDED ORBIT -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="orbit">
 
               <video
                 src="./crowdedvedio.mov"
@@ -1022,76 +813,30 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- ACCESSIBILITY RESOURCE HUB -->
-
-          <article
-            class="panel project-feature-row project-feature-row-reverse"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                Accessibility Resource Hub | Inclusive Web Platform
-              </h3>
-
-              <p class="project-feature-description">
-                Created a centralized accessibility platform for
-                discovering tools, practical guidance, and community
-                support in one place.
-              </p>
-
-              <p class="project-feature-description">
-                Focused on usability, accessibility-aware testing,
-                responsive design, and making inclusive digital
-                resources easier to discover and use.
-              </p>
-
-              <div class="tag-row">
-                <span>React</span>
-                <span>Spring Boot</span>
-                <span>Firebase</span>
-                <span>Accessibility</span>
-                <span>WCAG</span>
-              </div>
+              <h3>The Crowded Orbit</h3>
+              <p class="project-card-sub">LEO Congestion Analysis</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="arhub"
+                  data-case="orbit"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-
-                <a
-                  href="https://arhub-f7416.web.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/vercel.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://thecrowdedorbit.vercel.app/index.html" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Live</span>
                 </a>
 
-                <a
-                  href="https://github.com/sushmithabungatavula/ARHUB"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://github.com/sushmithabungatavula" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
                   <span>GitHub</span>
                 </a>
 
@@ -1099,8 +844,17 @@
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- ACCESSIBILITY RESOURCE HUB -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="arhub">
 
               <video
                 src="./arhubvedio.mov"
@@ -1120,76 +874,30 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- THRIFT STORE -->
-
-          <article
-            class="panel project-feature-row"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                Thrift Store System | Retail Workflow Platform
-              </h3>
-
-              <p class="project-feature-description">
-                Designed a full-stack retail workflow system for
-                inventory, payments, shipping, returns, customer
-                workflows, and administrative operations.
-              </p>
-
-              <p class="project-feature-description">
-                Structured the application around role-based workflows
-                and a normalized relational database to improve
-                operational control and maintainability.
-              </p>
-
-              <div class="tag-row">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>MySQL</span>
-                <span>RBAC</span>
-              </div>
+              <h3>Accessibility Resource Hub</h3>
+              <p class="project-card-sub">Inclusive Web Platform</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="thrift"
+                  data-case="arhub"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-
-                <a
-                  href="https://thrifstore-admin.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/vercel.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://arhub-f7416.web.app/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Live</span>
                 </a>
 
-                <a
-                  href="https://github.com/sushmithabungatavula/ThriftStoreCustomer"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/github.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://github.com/sushmithabungatavula/ARHUB" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
                   <span>GitHub</span>
                 </a>
 
@@ -1197,8 +905,17 @@
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- THRIFT STORE -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="thrift">
 
               <video
                 src="./thriftstorevedio.mov"
@@ -1218,71 +935,48 @@
 
             </div>
 
-          </article>
+            <div class="project-card-body">
 
-
-          <!-- FARMBOX -->
-
-          <article
-            class="panel project-feature-row project-feature-row-reverse"
-            data-reveal="up"
-          >
-
-            <div class="project-feature-copy">
-
-              <h3>
-                FarmBox | E-commerce Experience
-              </h3>
-
-              <p class="project-feature-description">
-                Built a responsive fresh-produce ordering experience
-                focused on clear product discovery, content hierarchy,
-                and streamlined shopping workflows.
-              </p>
-
-              <p class="project-feature-description">
-                Integrated frontend workflows with backend services
-                to support product browsing and digital ordering.
-              </p>
-
-              <div class="tag-row">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Responsive UI</span>
-              </div>
+              <h3>Thrift Store System</h3>
+              <p class="project-card-sub">Retail Workflow Platform</p>
 
               <div class="project-links">
 
                 <button
                   class="case-study-trigger"
                   type="button"
-                  data-case="farmbox"
+                  data-case="thrift"
                   aria-haspopup="dialog"
                 >
-                  <span>Case study</span>
+                  <span>View details</span>
                   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
 
-
-                <a
-                  href="https://www.farmbox.in/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="./icons/vercel.svg"
-                    alt=""
-                  />
+                <a class="project-link" href="https://thrifstore-admin.vercel.app/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   <span>Live</span>
+                </a>
+
+                <a class="project-link" href="https://github.com/sushmithabungatavula/ThriftStoreCustomer" target="_blank" rel="noreferrer">
+                  <img src="./icons/github.svg" alt="" />
+                  <span>GitHub</span>
                 </a>
 
               </div>
 
             </div>
 
+          </article>
 
-            <div class="project-feature-media">
+
+          <!-- FARMBOX -->
+
+          <article
+            class="panel project-card"
+            data-reveal="up"
+          >
+
+            <div class="project-card-media" data-case-open="farmbox">
 
               <video
                 src="./farmboxvedio-small.mp4"
@@ -1299,6 +993,32 @@
                   alt="FarmBox preview"
                 />
               </video>
+
+            </div>
+
+            <div class="project-card-body">
+
+              <h3>FarmBox</h3>
+              <p class="project-card-sub">E-commerce Experience</p>
+
+              <div class="project-links">
+
+                <button
+                  class="case-study-trigger"
+                  type="button"
+                  data-case="farmbox"
+                  aria-haspopup="dialog"
+                >
+                  <span>View details</span>
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+
+                <a class="project-link" href="https://www.farmbox.in/" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Live</span>
+                </a>
+
+              </div>
 
             </div>
 
@@ -1610,6 +1330,88 @@
                   Led creative projects, publicity campaigns,
                   and promotional activities for campus events
                   and student initiatives.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="timeline-item">
+
+              <div
+                class="timeline-marker"
+                aria-hidden="true"
+              ></div>
+
+              <div class="timeline-content">
+
+                <div class="timeline-header">
+
+                  <img
+                    class="timeline-logo"
+                    src="./sweclogo.png"
+                    alt="Sridevi Women's Engineering College logo"
+                  />
+
+                  <div>
+
+                    <h3>
+                      Creative Head
+                    </h3>
+
+                  </div>
+
+                </div>
+
+                <p class="timeline-org">
+                  VidhYouth Technical Fest
+                </p>
+
+                <p class="timeline-description">
+                  Led the creative team for the college technical fest,
+                  shaping event branding, poster and social media
+                  design, and on-campus promotion.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="timeline-item">
+
+              <div
+                class="timeline-marker"
+                aria-hidden="true"
+              ></div>
+
+              <div class="timeline-content">
+
+                <div class="timeline-header">
+
+                  <img
+                    class="timeline-logo"
+                    src="./sweclogo.png"
+                    alt="Sridevi Women's Engineering College logo"
+                  />
+
+                  <div>
+
+                    <h3>
+                      Team Captain
+                    </h3>
+
+                  </div>
+
+                </div>
+
+                <p class="timeline-org">
+                  College Cricket Team
+                </p>
+
+                <p class="timeline-description">
+                  Captained the college cricket team, leading the
+                  squad through practice sessions and inter-college
+                  matches.
                 </p>
 
               </div>

@@ -309,6 +309,12 @@ if (caseModal && typeof caseModal.showModal === "function") {
     });
   });
 
+  document.querySelectorAll("[data-case-open]").forEach((media) => {
+    media.addEventListener("click", () => {
+      document.querySelector(`.case-study-trigger[data-case="${media.dataset.caseOpen}"]`)?.click();
+    });
+  });
+
   caseModal.querySelector(".case-close").addEventListener("click", closeCase);
 
   caseModal.addEventListener("click", (event) => {
