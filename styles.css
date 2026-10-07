@@ -1592,3 +1592,137 @@ body[data-theme="light"] .contact-socials img[src$="github.svg"] {
     display: none;
   }
 }
+
+/* ---------- Education ---------- */
+
+.education-list {
+  display: grid;
+  margin-top: 0.4rem;
+}
+
+.education-list .education-entry {
+  align-items: start;
+  padding: 1.15rem 0;
+}
+
+.education-list .education-entry + .education-entry {
+  border-top: 1px solid var(--line-strong);
+}
+
+.education-list .education-entry:last-child {
+  padding-bottom: 0.2rem;
+}
+
+.education-logo {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.education-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+}
+
+.education-header h3 {
+  flex: 1 1 16rem;
+  line-height: 1.35;
+}
+
+.education-list .education-entry .education-period {
+  display: inline-block;
+  margin: 0;
+  flex: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent-strong);
+  white-space: nowrap;
+}
+
+.education-list .education-entry .education-school {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.6rem;
+  margin: 0.3rem 0 0;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.education-list .education-entry .education-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.education-location::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--muted-soft);
+}
+
+.education-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.education-list .education-entry .education-gpa {
+  display: inline-block;
+  margin: 0;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.education-coursework {
+  margin-top: 1rem;
+}
+
+.education-coursework h4 {
+  margin: 0 0 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-soft);
+}
+
+.education-coursework .tag-row {
+  margin-top: 0;
+}
+
+.education-list .education-entry .tag-row span {
+  margin-top: 0;
+}
+
+body[data-theme="light"] .education-list .education-entry .education-period,
+body[data-theme="light"] .education-list .education-entry .education-gpa {
+  color: #8e4aa3;
+}
+
+@media (max-width: 560px) {
+  .education-list .education-entry {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .education-logo {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
