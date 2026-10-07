@@ -1643,31 +1643,18 @@ body[data-theme="light"] .contact-socials img[src$="github.svg"] {
 }
 
 .education-list .education-entry .education-school {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.2rem 0.6rem;
+  display: block;
   margin: 0.3rem 0 0;
   font-weight: 500;
   color: var(--text);
 }
 
 .education-list .education-entry .education-location {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin: 0;
+  display: block;
+  margin: 0.15rem 0 0;
   font-weight: 400;
   font-size: 0.92rem;
   color: var(--muted);
-}
-
-.education-location::before {
-  content: "";
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--muted-soft);
 }
 
 .education-highlights {
@@ -2215,5 +2202,54 @@ body[data-theme="light"] .case-arch li {
     padding: 0.45rem 0.75rem;
     font-size: 0.82rem;
     gap: 0.35rem;
+  }
+}
+
+/* ---------- Education full width, certifications as a strip ---------- */
+
+.education-achievements {
+  grid-template-columns: 1fr;
+}
+
+.education-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+.education-list .education-entry + .education-entry {
+  border-top: 0;
+  padding-left: 2rem;
+  border-left: 1px solid var(--line-strong);
+}
+
+.education-list .education-entry:last-child {
+  padding-bottom: 1.15rem;
+}
+
+.achievements-panel#certifications {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem 2rem;
+}
+
+.achievements-panel#certifications .section-head {
+  margin: 0;
+}
+
+.achievements-panel#certifications .tag-row {
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .education-list {
+    grid-template-columns: 1fr;
+  }
+
+  .education-list .education-entry + .education-entry {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--line-strong);
   }
 }
