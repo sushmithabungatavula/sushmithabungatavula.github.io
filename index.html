@@ -699,18 +699,19 @@
               </p>
 
               <p class="project-feature-description">
-                Utilized Python, Sentence Transformers, Claude Sonnet,
-                and pgvector for semantic classification and retrieval,
-                incorporating user corrections to improve categorization
-                accuracy from 67% to 85%.
+                Wrote a Multinomial Naive Bayes classifier from scratch
+                in JavaScript that runs entirely in the browser and
+                retrains on every correction, improving categorization
+                accuracy from 67% to 85%. Receipt photos are read
+                on-device with Tesseract.js OCR.
               </p>
 
               <div class="tag-row">
-                <span>Python</span>
-                <span>Sentence Transformers</span>
-                <span>Claude Sonnet</span>
-                <span>pgvector</span>
+                <span>JavaScript</span>
+                <span>Naive Bayes</span>
                 <span>Machine Learning</span>
+                <span>Tesseract.js OCR</span>
+                <span>SVG Charts</span>
               </div>
 
               <div class="project-links">
@@ -727,7 +728,7 @@
 
 
                 <a
-                  href="https://ledgerly-eight-sepia.vercel.app/"
+                  href="https://ledgerly-expense-calcy.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -1966,7 +1967,7 @@
         </section>
         <section class="case-block">
           <h3>Engineering challenge</h3>
-          <p>The model has to learn each person&#x27;s categories from very little data and update right away. Every saved expense becomes a training example, corrections count 3×, and the model retrains from scratch on every change in milliseconds. Features combine single words, word pairs and an amount-range token.</p>
+          <p>The model has to learn each person&#x27;s categories from very little data and update right away. Every saved expense becomes a training example, corrections count 3×, and the model retrains from scratch on every change in milliseconds. The classifier is Multinomial Naive Bayes written from scratch with no ML library, using Laplace smoothing over single words, word pairs and an amount-range token, so you can see exactly which words drove each guess.</p>
         </section>
         <section class="case-block">
           <h3>Outcome</h3>
@@ -1974,11 +1975,11 @@
         </section>
         <section class="case-block">
           <h3>Stack</h3>
-          <div class="tag-row"><span>Python</span><span>Sentence Transformers</span><span>Claude Sonnet</span><span>pgvector</span><span>Machine Learning</span></div>
+          <div class="tag-row"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Naive Bayes (from scratch)</span><span>Machine Learning</span><span>Tesseract.js OCR</span><span>SVG Charts</span><span>localStorage</span><span>Node test runner</span></div>
         </section>
         <section class="case-block">
           <h3>Links</h3>
-          <div class="case-links"><a href="https://ledgerly-eight-sepia.vercel.app/" target="_blank" rel="noreferrer"><span>Live demo</span><span class="visually-hidden"> (opens in a new tab)</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/sushmithabungatavula/ledgerly" target="_blank" rel="noreferrer"><span>GitHub</span><span class="visually-hidden"> (opens in a new tab)</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          <div class="case-links"><a href="https://ledgerly-expense-calcy.vercel.app/" target="_blank" rel="noreferrer"><span>Live demo</span><span class="visually-hidden"> (opens in a new tab)</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://github.com/sushmithabungatavula/ledgerly" target="_blank" rel="noreferrer"><span>GitHub</span><span class="visually-hidden"> (opens in a new tab)</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 5h7v7M15 5l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
         </section>
         <section class="case-block">
           <h3>Architecture <span class="case-count">· 6 steps</span></h3>
