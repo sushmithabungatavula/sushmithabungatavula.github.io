@@ -14,8 +14,7 @@
 />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 <link
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
   rel="stylesheet"
@@ -27,13 +26,17 @@
   </head>
 
   <body data-theme="dark">
-    <canvas class="background-canvas" aria-hidden="true"></canvas>
-    <div class="background-grid" aria-hidden="true"></div>
-    <div class="cursor-glow" aria-hidden="true"></div>
 
 ```
+<canvas class="background-canvas" aria-hidden="true"></canvas>
+<div class="background-grid" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
 <header class="site-header">
-  <a class="brand" href="#home">Sushmitha Bungatavula</a>
+
+  <a class="brand" href="#home">
+    Sushmitha Bungatavula
+  </a>
 
   <button
     class="nav-toggle"
@@ -46,10 +49,11 @@
   </button>
 
   <div class="header-actions">
+
     <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#personal-achievements">Leadership</a>
       <a href="#education">Education</a>
@@ -73,8 +77,10 @@
 
       <span class="theme-toggle-thumb" aria-hidden="true"></span>
     </button>
+
   </div>
 </header>
+
 
 <main class="page-shell">
 
@@ -149,8 +155,8 @@
 
       <div class="hero-actions">
 
-        <a class="button button-primary" href="#projects">
-          View Work
+        <a class="button button-primary" href="#experience">
+          View Experience
         </a>
 
         <a
@@ -166,6 +172,7 @@
 
     </div>
 
+
     <div class="hero-visual" data-reveal="right">
 
       <div class="portrait-card">
@@ -179,539 +186,6 @@
         />
 
       </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PROJECTS -->
-
-  <section class="projects-section section" id="projects">
-
-    <div class="section-head" data-reveal="up">
-
-      <h2>Projects</h2>
-
-      <p>
-        AI applications, full-stack products, data visualization,
-        and production-focused software.
-      </p>
-
-    </div>
-
-    <div class="projects-stack">
-
-
-      <!-- CHAT WITH YOUR DOCS -->
-
-      <article
-        class="panel project-feature-row"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>Chat With Your Docs | RAG Application</h3>
-
-          <p class="project-feature-description">
-            Developed an end-to-end browser-based RAG application
-            for querying PDF and text documents and generating
-            citation-grounded answers with clickable source passages.
-          </p>
-
-          <p class="project-feature-description">
-            Engineered hybrid retrieval using semantic embeddings,
-            BM25, cosine similarity, and Reciprocal Rank Fusion.
-            Integrated Claude Sonnet with Vercel Edge Functions for
-            streaming responses with prompt-injection defenses,
-            rate limiting, and citation validation.
-          </p>
-
-          <div class="tag-row">
-            <span>JavaScript</span>
-            <span>RAG</span>
-            <span>Transformers.js</span>
-            <span>BM25</span>
-            <span>Claude Sonnet</span>
-            <span>Vercel Edge</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://chatwithyourdocs.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-            <a
-              href="https://github.com/sushmithabungatavula"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/github.svg" alt="" />
-              <span>GitHub</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <img
-            src="./chat-with-your-docs.png"
-            alt="Chat With Your Docs RAG application preview"
-          />
-
-        </div>
-
-      </article>
-
-
-      <!-- LEDGERLY -->
-
-      <article
-        class="panel project-feature-row project-feature-row-reverse"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>Ledgerly | AI Expense Tracker</h3>
-
-          <p class="project-feature-description">
-            Developed an end-to-end AI expense tracker with automated
-            transaction categorization and a confidence-based review
-            workflow for ambiguous expenses.
-          </p>
-
-          <p class="project-feature-description">
-            Utilized Python, Sentence Transformers, Claude Sonnet,
-            and pgvector for semantic classification and retrieval,
-            incorporating user corrections to improve categorization
-            accuracy from 67% to 85%.
-          </p>
-
-          <div class="tag-row">
-            <span>Python</span>
-            <span>Sentence Transformers</span>
-            <span>Claude Sonnet</span>
-            <span>pgvector</span>
-            <span>Machine Learning</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://ledgerly-eight-sepia.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-            <a
-              href="https://github.com/sushmithabungatavula"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/github.svg" alt="" />
-              <span>GitHub</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <img
-            src="./ledgerly.png"
-            alt="Ledgerly AI expense tracker preview"
-          />
-
-        </div>
-
-      </article>
-
-
-      <!-- BHARAT HARVEST -->
-
-      <article
-        class="panel project-feature-row"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>Bharat Harvest | Agri-tech Platform</h3>
-
-          <p class="project-feature-description">
-            Engineered multilingual crop advisory features in
-            11 languages for 500+ farmers, integrating backend
-            APIs and user-facing workflows that increased
-            user engagement by 50%.
-          </p>
-
-          <p class="project-feature-description">
-            Built AI-powered support workflows and real-time
-            communication features for farmers using OpenAI,
-            Whisper, Twilio Voice, Socket.io, AWS S3, Node.js,
-            Express.js, and MongoDB.
-          </p>
-
-          <div class="tag-row">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>OpenAI</span>
-            <span>Whisper</span>
-            <span>AWS</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://www.bharat-harvest.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <video
-            src="./bharathharvestvedio-small.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            poster="./bharath harvest.png"
-            aria-label="Bharat Harvest demo preview"
-          >
-            <img
-              src="./bharath harvest.png"
-              alt="Bharat Harvest preview"
-            />
-          </video>
-
-        </div>
-
-      </article>
-
-
-      <!-- CROWDED ORBIT -->
-
-      <article
-        class="panel project-feature-row project-feature-row-reverse"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>The Crowded Orbit | LEO Congestion Analysis</h3>
-
-          <p class="project-feature-description">
-            Analyzed 59K+ satellite and debris records using Python
-            and Pandas, cleaning and standardizing data to identify
-            long-term Low Earth Orbit congestion trends.
-          </p>
-
-          <p class="project-feature-description">
-            Built interactive D3.js and Three.js visualizations and
-            scenario projections to model satellite and debris growth
-            through 2035.
-          </p>
-
-          <div class="tag-row">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>D3.js</span>
-            <span>Three.js</span>
-            <span>Data Visualization</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://thecrowdedorbit.vercel.app/index.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-            <a
-              href="https://github.com/sushmithabungatavula"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/github.svg" alt="" />
-              <span>GitHub</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <video
-            src="./crowdedvedio.mov"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            poster="./crowded.png"
-            aria-label="The Crowded Orbit demo preview"
-          >
-            <img
-              src="./crowded.png"
-              alt="The Crowded Orbit preview"
-            />
-          </video>
-
-        </div>
-
-      </article>
-
-
-      <!-- ACCESSIBILITY RESOURCE HUB -->
-
-      <article
-        class="panel project-feature-row"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>Accessibility Resource Hub | Inclusive Web Platform</h3>
-
-          <p class="project-feature-description">
-            Created a centralized accessibility platform for
-            discovering tools, practical guidance, and community
-            support in one place.
-          </p>
-
-          <p class="project-feature-description">
-            Focused on usability, accessibility-aware testing,
-            responsive design, and making inclusive digital
-            resources easier to discover and use.
-          </p>
-
-          <div class="tag-row">
-            <span>React</span>
-            <span>Spring Boot</span>
-            <span>Firebase</span>
-            <span>Accessibility</span>
-            <span>WCAG</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://arhub-f7416.web.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-            <a
-              href="https://github.com/sushmithabungatavula/ARHUB"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/github.svg" alt="" />
-              <span>GitHub</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <video
-            src="./arhubvedio.mov"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            poster="./arhub.png"
-            aria-label="Accessibility Resource Hub demo preview"
-          >
-            <img
-              src="./arhub.png"
-              alt="Accessibility Resource Hub preview"
-            />
-          </video>
-
-        </div>
-
-      </article>
-
-
-      <!-- THRIFT STORE -->
-
-      <article
-        class="panel project-feature-row project-feature-row-reverse"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>Thrift Store System | Retail Workflow Platform</h3>
-
-          <p class="project-feature-description">
-            Designed a full-stack retail workflow system for
-            inventory, payments, shipping, returns, customer
-            workflows, and administrative operations.
-          </p>
-
-          <p class="project-feature-description">
-            Structured the application around role-based workflows
-            and a normalized relational database to improve
-            operational control and maintainability.
-          </p>
-
-          <div class="tag-row">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MySQL</span>
-            <span>RBAC</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://thrifstore-admin.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-            <a
-              href="https://github.com/sushmithabungatavula/ThriftStoreCustomer"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/github.svg" alt="" />
-              <span>GitHub</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <video
-            src="./thriftstorevedio.mov"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            poster="./thrift-store-system.svg"
-            aria-label="Thrift Store System demo preview"
-          >
-            <img
-              src="./thrift-store-system.svg"
-              alt="Thrift Store System preview"
-            />
-          </video>
-
-        </div>
-
-      </article>
-
-
-      <!-- FARMBOX -->
-
-      <article
-        class="panel project-feature-row"
-        data-reveal="up"
-      >
-
-        <div class="project-feature-copy">
-
-          <h3>FarmBox | E-commerce Experience</h3>
-
-          <p class="project-feature-description">
-            Built a responsive fresh-produce ordering experience
-            focused on clear product discovery, content hierarchy,
-            and streamlined shopping workflows.
-          </p>
-
-          <p class="project-feature-description">
-            Integrated frontend workflows with backend services
-            to support product browsing and digital ordering.
-          </p>
-
-          <div class="tag-row">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive UI</span>
-          </div>
-
-          <div class="project-links">
-
-            <a
-              href="https://www.farmbox.in/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="./icons/vercel.svg" alt="" />
-              <span>Live</span>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="project-feature-media">
-
-          <video
-            src="./farmboxvedio-small.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-            poster="./farmbox.png"
-            aria-label="FarmBox demo preview"
-          >
-            <img
-              src="./farmbox.png"
-              alt="FarmBox preview"
-            />
-          </video>
-
-        </div>
-
-      </article>
 
     </div>
 
@@ -733,6 +207,7 @@
       </p>
 
     </div>
+
 
     <div class="experience-timeline">
 
@@ -765,7 +240,9 @@
                 Jul 2026 - Present
               </span>
 
-              <h3>Software Engineer - AI</h3>
+              <h3>
+                Software Engineer - AI
+              </h3>
 
               <p>
                 Chicago Education Advocacy Cooperative
@@ -833,9 +310,13 @@
                 May 2025 - Aug 2025
               </span>
 
-              <h3>Software Engineering Intern - AI</h3>
+              <h3>
+                Software Engineering Intern - AI
+              </h3>
 
-              <p>Bharat-Harvest</p>
+              <p>
+                Bharat-Harvest
+              </p>
 
             </div>
 
@@ -846,8 +327,8 @@
             <li>
               Engineered multilingual crop advisory features in
               11 languages for 500+ farmers, integrating backend
-              APIs and user-facing workflows that increased
-              user engagement by 50%.
+              APIs and user-facing workflows that increased user
+              engagement by 50%.
             </li>
 
             <li>
@@ -899,9 +380,13 @@
                 Nov 2021 - Jul 2024
               </span>
 
-              <h3>Software Developer</h3>
+              <h3>
+                Software Developer
+              </h3>
 
-              <p>DXC Technology</p>
+              <p>
+                DXC Technology
+              </p>
 
             </div>
 
@@ -934,8 +419,8 @@
             </li>
 
             <li>
-              Participated across the full SDLC, contributing to
-              code reviews, unit testing, defect resolution, and
+              Participated across the full SDLC through code
+              reviews, unit testing, defect resolution, and
               production deployments within Agile development
               workflows.
             </li>
@@ -975,9 +460,13 @@
                 Jun 2019 - Nov 2019
               </span>
 
-              <h3>Full-Stack Software Development Intern</h3>
+              <h3>
+                Full-Stack Software Development Intern
+              </h3>
 
-              <p>HackBoats, Inc.</p>
+              <p>
+                HackBoats, Inc.
+              </p>
 
             </div>
 
@@ -1010,13 +499,495 @@
   </section>
 
 
+  <!-- PROJECTS -->
+
+  <section class="projects-section section" id="projects">
+
+    <div class="section-head" data-reveal="up">
+
+      <h2>Projects</h2>
+
+      <p>
+        AI applications, intelligent retrieval systems,
+        accessibility platforms, and data-driven products.
+      </p>
+
+    </div>
+
+
+    <div class="projects-stack">
+
+
+      <!-- CHAT WITH YOUR DOCS -->
+
+      <article
+        class="panel project-feature-row"
+        data-reveal="up"
+      >
+
+        <div class="project-feature-copy">
+
+          <h3>
+            Chat With Your Docs | RAG Application
+          </h3>
+
+          <p class="project-feature-description">
+            Developed an end-to-end browser-based RAG application
+            for querying PDF and text documents and generating
+            citation-grounded answers with clickable source passages.
+          </p>
+
+          <p class="project-feature-description">
+            Engineered hybrid retrieval using semantic embeddings,
+            BM25, cosine similarity, and Reciprocal Rank Fusion.
+            Integrated Claude Sonnet with Vercel Edge Functions
+            for streaming responses with prompt-injection defenses,
+            rate limiting, and citation validation.
+          </p>
+
+          <div class="tag-row">
+            <span>JavaScript</span>
+            <span>RAG</span>
+            <span>Transformers.js</span>
+            <span>BM25</span>
+            <span>Claude Sonnet</span>
+            <span>Vercel Edge</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://chatwithyourdocs.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/chatwithyourdocs.svg" alt="" />
+              <span>Live</span>
+            </a>
+
+            <a
+              href="https://github.com/sushmithabungatavula"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/github.svg" alt="" />
+              <span>GitHub</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-feature-media">
+
+          <img
+            src="./chat-with-your-docs.png"
+            alt="Chat With Your Docs RAG application preview"
+          />
+
+        </div>
+
+      </article>
+
+
+      <!-- LEDGERLY -->
+
+      <article
+        class="panel project-feature-row project-feature-row-reverse"
+        data-reveal="up"
+      >
+
+        <div class="project-feature-copy">
+
+          <h3>
+            Ledgerly | AI Expense Tracker
+          </h3>
+
+          <p class="project-feature-description">
+            Developed an end-to-end AI expense tracker with
+            automated transaction categorization and a
+            confidence-based review workflow for ambiguous expenses.
+          </p>
+
+          <p class="project-feature-description">
+            Utilized Python, Sentence Transformers, Claude Sonnet,
+            and pgvector for semantic classification and retrieval,
+            incorporating user corrections to improve categorization
+            accuracy from 67% to 85%.
+          </p>
+
+          <div class="tag-row">
+            <span>Python</span>
+            <span>Sentence Transformers</span>
+            <span>Claude Sonnet</span>
+            <span>pgvector</span>
+            <span>Machine Learning</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://ledgerly-eight-sepia.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/ledgerly.svg" alt="" />
+              <span>Live</span>
+            </a>
+
+            <a
+              href="https://github.com/sushmithabungatavula"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/github.svg" alt="" />
+              <span>GitHub</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-feature-media">
+
+          <img
+            src="./ledgerly.png"
+            alt="Ledgerly AI expense tracker preview"
+          />
+
+        </div>
+
+      </article>
+
+
+      <!-- CROWDED ORBIT -->
+
+      <article
+        class="panel project-feature-row"
+        data-reveal="up"
+      >
+
+        <div class="project-feature-copy">
+
+          <h3>
+            The Crowded Orbit | LEO Congestion Analysis
+          </h3>
+
+          <p class="project-feature-description">
+            Analyzed 59K+ satellite and debris records using
+            Python and Pandas, cleaning and standardizing data
+            to identify long-term Low Earth Orbit congestion trends.
+          </p>
+
+          <p class="project-feature-description">
+            Built interactive D3.js and Three.js visualizations
+            and scenario projections to model satellite and debris
+            growth through 2035.
+          </p>
+
+          <div class="tag-row">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>D3.js</span>
+            <span>Three.js</span>
+            <span>Data Visualization</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://thecrowdedorbit.vercel.app/index.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/vercel.svg" alt="" />
+              <span>Live</span>
+            </a>
+
+            <a
+              href="https://github.com/sushmithabungatavula"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/github.svg" alt="" />
+              <span>GitHub</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-feature-media">
+
+          <video
+            src="./crowdedvedio.mov"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="./crowded.png"
+            aria-label="The Crowded Orbit demo preview"
+          >
+            <img
+              src="./crowded.png"
+              alt="The Crowded Orbit preview"
+            />
+          </video>
+
+        </div>
+
+      </article>
+
+
+      <!-- ACCESSIBILITY RESOURCE HUB -->
+
+      <article
+        class="panel project-feature-row project-feature-row-reverse"
+        data-reveal="up"
+      >
+
+        <div class="project-feature-copy">
+
+          <h3>
+            Accessibility Resource Hub | Inclusive Web Platform
+          </h3>
+
+          <p class="project-feature-description">
+            Created a centralized accessibility platform for
+            discovering tools, practical guidance, and community
+            support in one place.
+          </p>
+
+          <p class="project-feature-description">
+            Focused on usability, accessibility-aware testing,
+            responsive design, and making inclusive digital
+            resources easier to discover and use.
+          </p>
+
+          <div class="tag-row">
+            <span>React</span>
+            <span>Spring Boot</span>
+            <span>Firebase</span>
+            <span>Accessibility</span>
+            <span>WCAG</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://arhub-f7416.web.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/vercel.svg" alt="" />
+              <span>Live</span>
+            </a>
+
+            <a
+              href="https://github.com/sushmithabungatavula/ARHUB"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/github.svg" alt="" />
+              <span>GitHub</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-feature-media">
+
+          <video
+            src="./arhubvedio.mov"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="./arhub.png"
+            aria-label="Accessibility Resource Hub demo preview"
+          >
+            <img
+              src="./arhub.png"
+              alt="Accessibility Resource Hub preview"
+            />
+          </video>
+
+        </div>
+
+      </article>
+
+
+      <!-- THRIFT STORE -->
+
+      <article
+        class="panel project-feature-row"
+        data-reveal="up"
+      >
+
+        <div class="project-feature-copy">
+
+          <h3>
+            Thrift Store System | Retail Workflow Platform
+          </h3>
+
+          <p class="project-feature-description">
+            Designed a full-stack retail workflow system for
+            inventory, payments, shipping, returns, customer
+            workflows, and administrative operations.
+          </p>
+
+          <p class="project-feature-description">
+            Structured the application around role-based workflows
+            and a normalized relational database to improve
+            operational control and maintainability.
+          </p>
+
+          <div class="tag-row">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MySQL</span>
+            <span>RBAC</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://thrifstore-admin.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/vercel.svg" alt="" />
+              <span>Live</span>
+            </a>
+
+            <a
+              href="https://github.com/sushmithabungatavula/ThriftStoreCustomer"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/github.svg" alt="" />
+              <span>GitHub</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-feature-media">
+
+          <video
+            src="./thriftstorevedio.mov"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="./thrift-store-system.svg"
+            aria-label="Thrift Store System demo preview"
+          >
+            <img
+              src="./thrift-store-system.svg"
+              alt="Thrift Store System preview"
+            />
+          </video>
+
+        </div>
+
+      </article>
+
+
+      <!-- FARMBOX -->
+
+      <article
+        class="panel project-feature-row project-feature-row-reverse"
+        data-reveal="up"
+      >
+
+        <div class="project-feature-copy">
+
+          <h3>
+            FarmBox | E-commerce Experience
+          </h3>
+
+          <p class="project-feature-description">
+            Built a responsive fresh-produce ordering experience
+            focused on clear product discovery, content hierarchy,
+            and streamlined shopping workflows.
+          </p>
+
+          <p class="project-feature-description">
+            Integrated frontend workflows with backend services
+            to support product browsing and digital ordering.
+          </p>
+
+          <div class="tag-row">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive UI</span>
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://www.farmbox.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./icons/vercel.svg" alt="" />
+              <span>Live</span>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-feature-media">
+
+          <video
+            src="./farmboxvedio-small.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="./farmbox.png"
+            aria-label="FarmBox demo preview"
+          >
+            <img
+              src="./farmbox.png"
+              alt="FarmBox preview"
+            />
+          </video>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
   <!-- SKILLS -->
 
   <section class="skills-section section" id="skills">
 
     <div class="section-head" data-reveal="up">
 
-      <h2>Technical Skills</h2>
+      <h2>
+        Technical Skills
+      </h2>
 
       <p>
         Technologies I use to build AI applications, APIs,
@@ -1026,7 +997,10 @@
     </div>
 
 
-    <div class="skills-ribbon-shell panel" data-reveal="up">
+    <div
+      class="skills-ribbon-shell panel"
+      data-reveal="up"
+    >
 
       <div class="skills-ribbon">
 
@@ -1035,6 +1009,9 @@
           <span>Python</span>
           <span>JavaScript</span>
           <span>TypeScript</span>
+          <span>C</span>
+          <span>C++</span>
+          <span>Java</span>
           <span>React</span>
           <span>FastAPI</span>
           <span>Node.js</span>
@@ -1046,7 +1023,6 @@
           <span>LangGraph</span>
           <span>MCP</span>
           <span>RAG</span>
-          <span>Claude</span>
           <span>PyTorch</span>
           <span>TensorFlow</span>
           <span>Transformers</span>
@@ -1065,6 +1041,9 @@
           <span>Python</span>
           <span>JavaScript</span>
           <span>TypeScript</span>
+          <span>C</span>
+          <span>C++</span>
+          <span>Java</span>
           <span>React</span>
           <span>FastAPI</span>
           <span>Node.js</span>
@@ -1076,7 +1055,6 @@
           <span>LangGraph</span>
           <span>MCP</span>
           <span>RAG</span>
-          <span>Claude</span>
           <span>PyTorch</span>
           <span>TensorFlow</span>
           <span>Transformers</span>
@@ -1099,13 +1077,15 @@
         data-reveal="left"
       >
 
-        <h3>AI & Generative AI</h3>
+        <h3>
+          AI & Generative AI
+        </h3>
 
         <p>
-          Build RAG applications, multi-agent workflows, semantic
-          retrieval systems, and LLM-powered features using
-          LangGraph, LangChain, MCP, Claude, OpenAI APIs, and
-          embedding-based retrieval.
+          Build RAG applications, multi-agent workflows,
+          semantic retrieval systems, and LLM-powered features
+          using LangGraph, LangChain, MCP, Claude, OpenAI APIs,
+          and embedding-based retrieval.
         </p>
 
       </article>
@@ -1116,12 +1096,14 @@
         data-reveal="up"
       >
 
-        <h3>Full-Stack Engineering</h3>
+        <h3>
+          Full-Stack Engineering
+        </h3>
 
         <p>
-          Develop responsive interfaces and production APIs using
-          React, TypeScript, JavaScript, Python, FastAPI, Node.js,
-          REST APIs, WebSockets, and SQLAlchemy.
+          Develop responsive interfaces and production APIs
+          using React, TypeScript, JavaScript, Python, FastAPI,
+          Node.js, REST APIs, WebSockets, and SQLAlchemy.
         </p>
 
       </article>
@@ -1132,12 +1114,14 @@
         data-reveal="right"
       >
 
-        <h3>Cloud & Infrastructure</h3>
+        <h3>
+          Cloud & Infrastructure
+        </h3>
 
         <p>
-          Work with AWS, GCP, Azure, Docker, Kubernetes, GitHub
-          Actions, Jenkins, Azure Pipelines, and Azure DevOps
-          for software delivery and deployment.
+          Work with AWS, GCP, Azure, Docker, Kubernetes,
+          GitHub Actions, Jenkins, Azure Pipelines, and
+          Azure DevOps for software delivery and deployment.
         </p>
 
       </article>
@@ -1159,9 +1143,12 @@
 
       <div class="section-head section-head-compact">
 
-        <h2>Leadership</h2>
+        <h2>
+          Leadership
+        </h2>
 
       </div>
+
 
       <div class="timeline">
 
@@ -1201,9 +1188,9 @@
             </p>
 
             <p class="timeline-description">
-              Led creative projects, publicity campaigns, and
-              promotional activities for campus events and
-              student initiatives.
+              Led creative projects, publicity campaigns,
+              and promotional activities for campus events
+              and student initiatives.
             </p>
 
           </div>
@@ -1232,7 +1219,9 @@
 
       <div class="section-head section-head-compact">
 
-        <h2>Education</h2>
+        <h2>
+          Education
+        </h2>
 
       </div>
 
@@ -1270,7 +1259,9 @@
 
       <div class="certifications-block">
 
-        <h3>Relevant Coursework</h3>
+        <h3>
+          Relevant Coursework
+        </h3>
 
         <div class="tag-row">
 
@@ -1324,7 +1315,9 @@
 
       <div class="section-head section-head-compact">
 
-        <h2>Certifications</h2>
+        <h2>
+          Certifications
+        </h2>
 
       </div>
 
@@ -1359,7 +1352,9 @@
 
       <div class="contact-showcase-copy">
 
-        <h2>Get in touch</h2>
+        <h2>
+          Get in touch
+        </h2>
 
         <div class="contact-copy-links">
 
@@ -1376,8 +1371,13 @@
             target="_blank"
             rel="noreferrer"
           >
-            <img src="./icons/resume.svg" alt="" />
-            <span>View Resume</span>
+            <img
+              src="./icons/resume.svg"
+              alt=""
+            />
+            <span>
+              View Resume
+            </span>
           </a>
 
         </div>
